@@ -1,0 +1,125 @@
+header {
+    border: 1px solid red;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+main {
+    border: 1px solid green;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+footer {
+    border: 1px solid blue;
+    padding: 0.5em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+
+}
+
+
+table, th, td{
+    border: 1px solid lightblue;
+    border-collapse: collapse;
+}
+
+form label{
+    display: inline-block;
+    width: 100px;
+
+}
+
+/*FORMULAIRE*/
+
+/*
+https://webdesign.tutsplus.com/tutorials/how-to-build-web-form-layouts-with-css-grid--cms-28776
+
+*/
+form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    padding: 1em;
+}
+
+input,
+button {
+    grid-column: 2 / 3;
+}
+
+form input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+}
+
+label[for = "nom" ]::after{
+    content: " * ";
+    color: red;
+}
+
+form button {
+    background: lightgrey;
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+}
+form button:hover {
+    background: gold;
+}
+
+label {
+    padding: 0.5em 0.5em 0.5em 0;
+    grid-column: 1 / 2;
+}
+
+input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+}
+input:focus {
+    outline: 3px solid gold;
+}
+
+.err {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+    padding:  1em;
+    background:#f0ad4e;
+    border: 1px solid black;
+    margin: 0.8rem auto 0 auto;
+    max-width: 700px;
+
+}
+
+.err_subjet {
+    grid-column: 1/2;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.err_subjet::after{
+    content: ": ";
+}
+
+.err_msg{
+    grid-column: 2/3;
+}
+
+table,td, th {
+    border: solid black 1px;
+    border-collapse: collapse;
+}
